@@ -1,0 +1,37 @@
+stages:
+  - install
+  - test
+  - build
+
+image: node:18
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm ci
+
+install:
+  stage: install
+  script:
+    - echo "Dependencies installed by before_script"
+
+test:
+  stage: test
+  script:
+    - npm run test
+  artifacts:
+    when: always
+    reports:
+      junit: junit-report.xml
+    paths:
+      - coverage/
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
