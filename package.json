@@ -1,0 +1,28 @@
+{
+  "name": "vodafone-test-exam",
+  "version": "1.0.0",
+  "description": "Playwright tests for Vodafone website functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:part2": "playwright test part2.spec.ts --ui",
+    "report": "playwright show-report",
+    "install-browsers": "playwright install --with-deps"
+  },
+  "keywords": ["playwright", "testing", "vodafone", "e2e"],
+  "author": "rydelle0918",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rydelle0918/vodafonetestExam.git"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/axios": "^0.9.36"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}

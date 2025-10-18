@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Environment files
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+coverage/
+dist/
+build/
+
+# Personal/Private files
+*.private
+*.personal
+*.secret
+private/
+personal/
+secrets/
+docs/personal/
+notes/
+my-notes/
+temp/
+scratch/
+
+# Office documents (if personal)
+*.docx
+*.xlsx
+*.pptx
+# Uncomment if you want to exclude ALL office docs:
+# *.doc
+# *.xls  
+# *.ppt
+
+# Text files that might be personal
+TODO.txt
+NOTES.txt
+personal-*.txt
+private-*.txt
