@@ -1,0 +1,4 @@
+touch .gitlab-ci.yml
+git add .gitlab-ci.yml
+git commit -m "Add CI pipeline"
+git push origin main
